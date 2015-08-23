@@ -1,0 +1,16 @@
+#region Private
+private [#ReplaceValueType] [#ReplaceValueVariablePrivate]
+#endregion
+
+#region Public
+public [#ReplaceValueType] [#ReplaceValueVariablePublic]
+{ 
+	get { return [#ReplaceValueVariablePrivate]; }
+	set
+	{
+		if(value == [#ReplaceValueVariablePrivate]) return;
+		[#ReplaceValueVariablePrivate]  = value;
+		NotifyChange([#ReplaceValueVariablePublic]);
+	}
+}
+#endregion Public
