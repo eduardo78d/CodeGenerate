@@ -3,14 +3,14 @@ private [#ReplaceValueType] [#ReplaceValueVariablePrivate]
 #endregion
 
 #region Public
-public [#ReplaceValueType] [#ReplaceValueVariablePublic]
+public [_ReplaceValueType_] [_ReplaceValueVariablePublic_]
 { 
 	get { return [#ReplaceValueVariablePrivate]; }
 	set
 	{
-		if(value == [#ReplaceValueVariablePrivate]) return;
-		[#ReplaceValueVariablePrivate]  = value;
-		NotifyChange([#ReplaceValueVariablePublic]);
+		if(value == [_ReplaceValueVariablePrivate_]) return;
+		[_ReplaceValueVariablePrivate_]  = value;
+		NotifyChange([_ReplaceValueVariablePublic_]);
 	}
 }
 #endregion Public
